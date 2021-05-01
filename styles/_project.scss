@@ -18,6 +18,19 @@
 
   .medmemo-paragraph {
     margin-left: 10rem;
+    .medmemo-link {
+      display: flex;
+      a {
+        margin-left: 1rem;
+      }
+      button {
+        border-radius: 10%;
+        background-color: #27394e;
+        color: white;
+        border: none;
+        padding: 0.5rem 0.5rem;
+      }
+    }
     p {
       color: #27394e;
     }

@@ -41,13 +41,9 @@ a:hover {
   color: #ffd700;
   // font-weight: normal;
 }
-// a:hover span {
-//   display: none;
-//   // content: "marksavin72@gmail.com";
-// }
-// a:hover:before {
-//   content: "marksavin72@gmail.com";
-// }
+button:hover {
+  cursor: pointer;
+}
 
 ul {
   list-style: none;
