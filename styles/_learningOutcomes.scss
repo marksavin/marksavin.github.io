@@ -1,0 +1,17 @@
+/* Introduction */
+.learning-outcomes {
+  display: flex;
+  // align-items: center;
+  min-height: 100%;
+  overflow-x: auto;
+
+  .learning-outcomes-text {
+    h2 {
+      font-size: 36px;
+    }
+    h4 {
+      color: #27394e;
+      margin: 2.5rem 0rem;
+    }
+  }
+}

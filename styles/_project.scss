@@ -1,0 +1,72 @@
+/* Introduction */
+.project {
+  display: flex;
+  justify-content: space-around;
+  // align-items: center;
+  min-height: 100%;
+  overflow-x: auto;
+
+  .medmemo {
+    display: flex;
+    justify-content: space-around;
+    .img-medmemo {
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+    }
+  }
+
+  .medmemo-paragraph {
+    margin-left: 10rem;
+    p {
+      color: #27394e;
+    }
+  }
+}
+
+@media screen and (max-width: 1450px) {
+  .project {
+    .medmemo {
+      .img-medmemo {
+        width: 250px;
+        height: 250px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .project {
+    .medmemo {
+      .img-medmemo {
+        display: none;
+      }
+    }
+    .medmemo-paragraph {
+      margin-left: 0rem;
+    }
+  }
+}
+
+// @media screen and (max-width: 1421px) {
+//   .project {
+//     .medmemo {
+//       .img-medmemo {
+//         display: none;
+//       }
+//     }
+//   }
+// }
+
+// @media screen and (max-width: 974px) {
+//   .project {
+//     .medmemo-paragraph {
+//       h2 {
+//         font-size: 2.8rem;
+//       }
+//       p {
+//         font-size: 1.5rem;
+//       }
+//     }
+//   }
+// }
