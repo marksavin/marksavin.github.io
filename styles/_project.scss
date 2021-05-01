@@ -24,18 +24,24 @@
   }
 }
 
-@media screen and (max-width: 1450px) {
+@media screen and (max-width: 1730px) {
   .project {
     .medmemo {
-      .img-medmemo {
-        width: 250px;
-        height: 250px;
-      }
+      margin-top: 5%;
     }
   }
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1440px) {
+  .project {
+    .medmemo {
+      margin-top: 0%;
+      align-items: center;
+    }
+  }
+}
+
+@media screen and (max-width: 1308px) {
   .project {
     .medmemo {
       .img-medmemo {
@@ -44,29 +50,25 @@
     }
     .medmemo-paragraph {
       margin-left: 0rem;
+      h2 {
+        font-size: 3rem;
+      }
+      p {
+        font-size: 1.8rem;
+      }
     }
   }
 }
 
-// @media screen and (max-width: 1421px) {
-//   .project {
-//     .medmemo {
-//       .img-medmemo {
-//         display: none;
-//       }
-//     }
-//   }
-// }
-
-// @media screen and (max-width: 974px) {
-//   .project {
-//     .medmemo-paragraph {
-//       h2 {
-//         font-size: 2.8rem;
-//       }
-//       p {
-//         font-size: 1.5rem;
-//       }
-//     }
-//   }
-// }
+@media screen and (max-width: 1024px) {
+  .project {
+    .medmemo-paragraph {
+      h2 {
+        font-size: 2.8rem;
+      }
+      p {
+        font-size: 1.6rem;
+      }
+    }
+  }
+}

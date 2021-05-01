@@ -90,7 +90,7 @@ nav {
     left: 100%;
     flex-direction: column;
     align-items: center;
-    transition: transform 1s ease;
+    // transition: transform 1s ease;
   }
 
   .menu-check {
@@ -105,7 +105,7 @@ nav {
     z-index: 100;
   }
   .menu-check:checked + .nav-links {
-    transform: translate(-90%);
+    transform: translate(-112.5%);
     // left: 0;
   }
   .menu-check:checked + footer {

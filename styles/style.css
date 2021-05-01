@@ -393,10 +393,6 @@ nav {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-transition: -webkit-transform 1s ease;
-    transition: -webkit-transform 1s ease;
-    transition: transform 1s ease;
-    transition: transform 1s ease, -webkit-transform 1s ease;
   }
   .menu-check {
     position: absolute;
@@ -411,8 +407,8 @@ nav {
     z-index: 100;
   }
   .menu-check:checked + .nav-links {
-    -webkit-transform: translate(-90%);
-            transform: translate(-90%);
+    -webkit-transform: translate(-112.5%);
+            transform: translate(-112.5%);
   }
   .menu-check:checked + footer {
     display: none;
@@ -476,7 +472,7 @@ nav {
   border-radius: 50%;
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1450px) {
   .home .intro-about-me .img-me {
     width: 250px;
     height: 250px;
@@ -496,6 +492,31 @@ nav {
   .home .intro-about-me .img-me {
     width: 220px;
     height: 220px;
+  }
+  .home .home-text h2 {
+    font-size: 30px;
+  }
+  .home .home-text h1 {
+    font-size: 42px;
+  }
+  .home .home-text h4 {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-height: 630px) {
+  .home .intro-about-me .img-me {
+    width: 200px;
+    height: 200px;
+  }
+  .home .home-text h2 {
+    font-size: 2.6rem;
+  }
+  .home .home-text h1 {
+    font-size: 3.8rem;
+  }
+  .home .home-text h4 {
+    font-size: 1.2rem;
   }
 }
 
@@ -526,7 +547,7 @@ nav {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 0rem 2.5rem;
+  margin-right: 2.5rem;
 }
 
 .about .about-text p {
@@ -545,8 +566,6 @@ nav {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 0rem 2.5rem;
-  margin-bottom: 4rem;
 }
 
 .about .about-skills .programming {
@@ -593,6 +612,53 @@ nav {
   color: #27394e;
 }
 
+@media screen and (max-width: 1308px) {
+  .about .about-text h2 {
+    font-size: 3rem;
+  }
+  .about .about-text p {
+    font-size: 1.8rem;
+  }
+  .about .about-skills {
+    margin-bottom: 4rem;
+  }
+  .about .about-skills h2 {
+    font-size: 3rem;
+  }
+  .about .about-skills .programming h4,
+  .about .about-skills .software h4,
+  .about .about-skills .operating-systems h4 {
+    font-size: 2.2rem;
+  }
+  .about .about-skills .programming p,
+  .about .about-skills .software p,
+  .about .about-skills .operating-systems p {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .about .about-text h2 {
+    font-size: 2.8rem;
+  }
+  .about .about-text p {
+    font-size: 1.6rem;
+  }
+  .about .about-skills h2 {
+    font-size: 2.8rem;
+  }
+  .about .about-skills .programming h4,
+  .about .about-skills .software h4,
+  .about .about-skills .operating-systems h4 {
+    font-size: 2rem;
+  }
+  .about .about-skills .programming p,
+  .about .about-skills .software p,
+  .about .about-skills .operating-systems p {
+    font-size: 1.6rem;
+  }
+}
+
 /* Introduction */
 .project {
   display: -webkit-box;
@@ -626,19 +692,42 @@ nav {
   color: #27394e;
 }
 
-@media screen and (max-width: 1450px) {
-  .project .medmemo .img-medmemo {
-    width: 250px;
-    height: 250px;
+@media screen and (max-width: 1730px) {
+  .project .medmemo {
+    margin-top: 5%;
   }
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1440px) {
+  .project .medmemo {
+    margin-top: 0%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media screen and (max-width: 1308px) {
   .project .medmemo .img-medmemo {
     display: none;
   }
   .project .medmemo-paragraph {
     margin-left: 0rem;
+  }
+  .project .medmemo-paragraph h2 {
+    font-size: 3rem;
+  }
+  .project .medmemo-paragraph p {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .project .medmemo-paragraph h2 {
+    font-size: 2.8rem;
+  }
+  .project .medmemo-paragraph p {
+    font-size: 1.6rem;
   }
 }
 
@@ -658,6 +747,25 @@ nav {
 .learning-outcomes .learning-outcomes-text h4 {
   color: #27394e;
   margin: 2.5rem 0rem;
+  font-weight: normal;
+}
+
+@media screen and (max-width: 1308px) {
+  .learning-outcomes .learning-outcomes-text h2 {
+    font-size: 3rem;
+  }
+  .learning-outcomes .learning-outcomes-text h4 {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .learning-outcomes .learning-outcomes-text h2 {
+    font-size: 2.8rem;
+  }
+  .learning-outcomes .learning-outcomes-text h4 {
+    font-size: 1.6rem;
+  }
 }
 
 /* Introduction */
@@ -688,51 +796,30 @@ nav {
 }
 
 .contact .contact-me h2 {
-  font-size: 48px;
+  font-size: 36px;
 }
 
-.contact .contact-me .contact-info {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.contact .contact-me .contact-info .contact-email,
-.contact .contact-me .contact-info .contact-number {
+.contact .contact-me h4 {
   color: #27394e;
+  font-size: 18px;
 }
 
 .contact .contact-me p {
-  margin-top: 15%;
+  margin-top: 10%;
   color: #27394e;
+  font-size: 18px;
 }
 
 .contact .list {
   display: none;
 }
 
-@media screen and (max-width: 1700px) {
-  .contact h2 {
-    font-size: 44px;
+@media screen and (max-height: 630px) {
+  .contact .contact-me h2 {
+    font-size: 3.5rem;
   }
-}
-
-@media screen and (max-width: 1500px) {
-  .contact h2 {
-    font-size: 42px;
-  }
-}
-
-@media screen and (max-width: 1192px) {
-  .contact h2 {
-    font-size: 40px;
+  .contact .contact-info h4 {
+    font-size: 1.8rem;
   }
 }
 
@@ -749,13 +836,12 @@ nav {
             align-items: normal;
     background: none;
   }
-  .contact ul {
+  .contact .list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -769,7 +855,7 @@ nav {
             justify-content: center;
     margin-bottom: 10px;
   }
-  .contact .contact-text {
+  .contact .contact-me p {
     display: none;
   }
 }

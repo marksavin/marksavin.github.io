@@ -31,7 +31,7 @@
   }
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1450px) {
   .home {
     .intro-about-me {
       .img-me {
@@ -59,6 +59,39 @@
       .img-me {
         width: 220px;
         height: 220px;
+      }
+    }
+    .home-text {
+      h2 {
+        font-size: 30px;
+      }
+      h1 {
+        font-size: 42px;
+      }
+      h4 {
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+@media screen and (max-height: 630px) {
+  .home {
+    .intro-about-me {
+      .img-me {
+        width: 200px;
+        height: 200px;
+      }
+    }
+    .home-text {
+      h2 {
+        font-size: 2.6rem;
+      }
+      h1 {
+        font-size: 3.8rem;
+      }
+      h4 {
+        font-size: 1.2rem;
       }
     }
   }
