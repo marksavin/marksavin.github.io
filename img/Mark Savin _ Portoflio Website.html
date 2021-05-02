@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<!-- saved from url=(0028)http://127.0.0.1:5500/about/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Mark Savin _ Portoflio Website_files/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com/">
+    <link href="./Mark Savin _ Portoflio Website_files/css2" rel="stylesheet">
+    <title>Mark Savin | Portoflio Website</title>
+  </head>
+  <body>
+    <main>
+      <div class="toggle">
+        <h2 class="introduction intro-blue">Original/Crimson</h2>
+        <label class="switch">
+          <input onclick="myFunction()" type="checkbox">
+          <span class="slider round"></span>
+        </label>
+      </div>
+      <section class="glass">
+        <nav>
+          <a href="http://127.0.0.1:5500/" id="logo" class="intro-blue">Mark Savin</a>
+          <ul>
+            <li><a class="active" href="http://127.0.0.1:5500/about/">About</a></li>
+            <li><a href="http://127.0.0.1:5500/project/">Projects</a></li>
+            <li>
+              <a href="http://127.0.0.1:5500/learningOutcomes/">Learning Outcomes</a>
+            </li>
+            <li><a href="http://127.0.0.1:5500/about/#">Resume</a></li>
+            <li><a href="http://127.0.0.1:5500/contact/">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="about">
+          <h2 class="intro-blue">About Me</h2>
+          <h2 class="intro-blue">Skills</h2>
+          <div class="achievements">
+            <img class="award" src="./Mark Savin _ Portoflio Website_files/award.svg" alt="award-icon">
+            <h2 class="intro-blue">Achievements</h2>
+          </div>
+        </div>
+        <footer>
+          <div class="footer-content">
+            <h4>Mark Savin © 2021</h4>
+            <ul>
+              <li>
+                <a href="http://127.0.0.1:5500/about/#"><img src="./Mark Savin _ Portoflio Website_files/email.svg" alt="my-email">email</a>
+              </li>
+              <li>
+                <a href="http://127.0.0.1:5500/about/#"><img src="./Mark Savin _ Portoflio Website_files/github.svg" alt="github-social">GitHub</a>
+              </li>
+              <li>
+                <a href="http://127.0.0.1:5500/about/#"><img src="./Mark Savin _ Portoflio Website_files/linkedin.svg" alt="linkedin-social">
+                  Linkedin</a>
+              </li>
+            </ul>
+          </div>
+        </footer>
+      </section>
+    </main>
+    <script src="./Mark Savin _ Portoflio Website_files/app.js.download"></script>
+  <!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
