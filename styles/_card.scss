@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .card {
   background: white;
   height: 85vh;
@@ -45,3 +46,52 @@
 //   transform: rotate(45deg);
 //   -webkit-transform: rotate(45deg);
 // }
+=======
+.card {
+  background: white;
+  height: 85vh;
+  width: 80%;
+  z-index: 2;
+  position: relative;
+  box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.3);
+}
+
+.content {
+  height: 55vh;
+  width: 80%;
+  margin: auto;
+  overflow: auto;
+  scroll-behavior: smooth;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(211, 211, 211, 0.7) white;
+}
+
+*::-webkit-scrollbar {
+  width: 12px; /* width of the entire scrollbar */
+}
+
+*::-webkit-scrollbar-track {
+  background: white; /* color of the tracking area */
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgba(211, 211, 211, 0.7); /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+  border: 3px solid white; /* creates padding around scroll thumb */
+}
+
+// .arrow {
+//   border: solid black;
+//   border-width: 0 3px 3px 0;
+//   display: inline-block;
+//   padding: 3px;
+// }
+
+// .down {
+//   transform: rotate(45deg);
+//   -webkit-transform: rotate(45deg);
+// }
+>>>>>>> 11b12d6f1d009aaaa5bb3a146fdff8a0bb40373b

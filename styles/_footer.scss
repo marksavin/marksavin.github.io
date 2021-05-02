@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 footer {
   display: flex;
   position: absolute;
@@ -143,3 +144,150 @@ footer {
     display: none;
   }
 }
+=======
+footer {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  background: #27394e;
+  width: 100%;
+  margin: auto;
+  min-height: 10vh;
+  padding: 0% 5%;
+
+  .footer-content {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    ul {
+      flex: 1 1 40rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      a {
+        color: white;
+        font-weight: bold;
+      }
+    }
+
+    h4 {
+      color: white;
+      flex: 2 1 40rem;
+      font-size: 3.2rem;
+    }
+  }
+}
+
+.email-footer,
+.linkedin-footer,
+.github-footer {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+.github-footer {
+  width: 6rem;
+  height: 6rem;
+}
+
+@media screen and (max-height: 1131px) {
+  .email-footer,
+  .linkedin-footer {
+    width: 3rem;
+    height: 3rem;
+  }
+  .github-footer {
+    margin-top: 0.3rem;
+    width: 4.2rem;
+    height: 4.2rem;
+  }
+  footer {
+    .footer-content {
+      h4 {
+        font-size: 2.5rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-height: 900px) {
+  .email-footer,
+  .linkedin-footer {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  .github-footer {
+    width: 3.6rem;
+    height: 3.6rem;
+  }
+  footer {
+    .footer-content {
+      h4 {
+        font-size: 2.3rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-height: 750px) {
+  .email-footer,
+  .linkedin-footer,
+  .github-footer {
+    width: 2.2rem;
+    height: 2.2rem;
+  }
+  .github-footer {
+    margin-top: 0.3rem;
+    width: 3.4rem;
+    height: 3.4rem;
+  }
+  footer {
+    .footer-content {
+      h4 {
+        font-size: 2.1rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-height: 630px) {
+  .email-footer,
+  .linkedin-footer {
+    width: 2.1rem;
+    height: 2.1rem;
+  }
+  .github-footer {
+    margin-top: 0.4rem;
+
+    width: 3.2rem;
+    height: 3.2rem;
+  }
+  footer {
+    .footer-content {
+      h4 {
+        font-size: 1.8rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-height: 500px) {
+  .email-footer,
+  .linkedin-footer {
+    width: 1.8rem;
+    height: 1.8rem;
+  }
+  .github-footer {
+    margin-top: 0.6rem;
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+}
+//commitss
+
+@media screen and (max-width: 1024px) {
+  footer {
+    display: none;
+  }
+}
+>>>>>>> 11b12d6f1d009aaaa5bb3a146fdff8a0bb40373b

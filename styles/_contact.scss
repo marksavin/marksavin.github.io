@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* Introduction */
 .contact {
   display: flex;
@@ -78,3 +79,85 @@
     }
   }
 }
+=======
+/* Introduction */
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
+
+  .contact-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // justify-content: center;
+    h2 {
+      font-size: 5rem;
+    }
+    // .contact-info {
+    //   display: flex;
+    //   flex-direction: column;
+    //   align-items: center;
+    h4 {
+      color: #27394e;
+      font-size: 3rem;
+    }
+    // }
+
+    p {
+      margin-top: 10%;
+      color: #27394e;
+      font-size: 2.4rem;
+    }
+  }
+
+  .list {
+    display: none;
+  }
+}
+
+@media screen and (max-height: 630px) {
+  .contact {
+    .contact-me h2 {
+      font-size: 3.5rem;
+    }
+    .contact-info h4 {
+      font-size: 1.8rem;
+    }
+  }
+}
+
+@media screen and (max-width: 1570px) {
+  .contact {
+    .contact-me h2 {
+      font-size: 3.5rem;
+    }
+    .contact-info h4 {
+      font-size: 1.8rem;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .contact {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: normal;
+    background: none;
+    .list {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+    .contact-me {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 10px;
+    }
+    .contact-me p {
+      display: none;
+    }
+  }
+}
+>>>>>>> 11b12d6f1d009aaaa5bb3a146fdff8a0bb40373b

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* Introduction */
 .home {
   display: flex;
@@ -137,3 +138,144 @@
     }
   }
 }
+=======
+/* Introduction */
+.home {
+  display: flex;
+  justify-content: space-around;
+  min-height: 100%;
+  overflow-x: auto;
+  align-items: center;
+
+  .home-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h2 {
+      color: #27394e;
+      font-size: 4rem;
+    }
+    h1 {
+      font-size: 5.2rem;
+    }
+    h4 {
+      font-size: 2.2rem;
+      color: #27394e;
+    }
+  }
+  .intro-about-me {
+    display: flex;
+    align-items: center;
+    .img-me {
+      width: 350px;
+      height: 350px;
+      border-radius: 50%;
+    }
+  }
+}
+
+@media screen and (max-width: 1920px) {
+  /* Introduction */
+  .home {
+    .home-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      h2 {
+        color: #27394e;
+        font-size: 36px;
+      }
+      h1 {
+        font-size: 48px;
+      }
+      h4 {
+        font-size: 18px;
+        color: #27394e;
+      }
+    }
+    .intro-about-me {
+      .img-me {
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1450px) {
+  .home {
+    .intro-about-me {
+      .img-me {
+        width: 250px;
+        height: 250px;
+      }
+    }
+    .home-text {
+      h2 {
+        font-size: 32px;
+      }
+      h1 {
+        font-size: 44px;
+      }
+      h4 {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .home {
+    .intro-about-me {
+      .img-me {
+        width: 220px;
+        height: 220px;
+      }
+    }
+    .home-text {
+      h2 {
+        font-size: 30px;
+      }
+      h1 {
+        font-size: 42px;
+      }
+      h4 {
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+@media screen and (max-height: 630px) {
+  .home {
+    .intro-about-me {
+      .img-me {
+        width: 200px;
+        height: 200px;
+      }
+    }
+    .home-text {
+      h2 {
+        font-size: 2.6rem;
+      }
+      h1 {
+        font-size: 3.8rem;
+      }
+      h4 {
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .home {
+    .intro-about-me {
+      .img-me {
+        display: none;
+      }
+    }
+  }
+}
+>>>>>>> 11b12d6f1d009aaaa5bb3a146fdff8a0bb40373b
