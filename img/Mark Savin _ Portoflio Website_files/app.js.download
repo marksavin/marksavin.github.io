@@ -1,0 +1,13 @@
+function myFunction() {
+  var element = document.getElementsByClassName("intro-blue");
+  for (let i = 0; i < element.length; i++) {
+    element[i].classList.toggle("intro-red");
+    console.log(element[i]);
+  }
+
+  var element = document.getElementsByClassName("intro-btn-blue");
+  for (let i = 0; i < element.length; i++) {
+    element[i].classList.toggle("intro-btn-red");
+    console.log(element[i]);
+  }
+}

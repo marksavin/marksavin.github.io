@@ -1,0 +1,57 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+h1 {
+  font-size: 4.6rem;
+  font-family: "Poppins", sans-serif;
+}
+li,
+button,
+label,
+input,
+p {
+  font-size: 2rem;
+  font-family: "Poppins", sans-serif;
+}
+h2 {
+  font-size: 3.5rem;
+  font-family: "Poppins", sans-serif;
+}
+h3 {
+  font-size: 3rem;
+  font-family: "Poppins", sans-serif;
+}
+h4,
+h5 {
+  font-size: 2.5rem;
+  font-family: "Poppins", sans-serif;
+}
+a {
+  color: #27394e;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+}
+a:hover {
+  color: #ffd700;
+  // font-weight: normal;
+}
+button:hover {
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+/* color swap*/
+.intro-blue {
+  color: #27394e;
+}
+.intro-red {
+  color: #900;
+}
