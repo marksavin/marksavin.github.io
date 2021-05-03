@@ -739,6 +739,8 @@ nav {
           align-items: center;
   min-height: 100%;
   overflow-x: auto;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .project .medmemo {
@@ -750,25 +752,29 @@ nav {
 }
 
 .project .medmemo .img-medmemo {
-  width: 250px;
-  height: 250px;
+  width: 200px;
+  height: 200px;
 }
 
-.project .medmemo-paragraph {
+.project .medmemo-paragraph,
+.project .testing-paragraph {
   margin-left: 10rem;
 }
 
-.project .medmemo-paragraph .medmemo-link {
+.project .medmemo-paragraph .medmemo-link,
+.project .testing-paragraph .medmemo-link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.project .medmemo-paragraph .medmemo-link a {
+.project .medmemo-paragraph .medmemo-link a,
+.project .testing-paragraph .medmemo-link a {
   margin-left: 1rem;
 }
 
-.project .medmemo-paragraph .medmemo-link button {
+.project .medmemo-paragraph .medmemo-link button,
+.project .testing-paragraph .medmemo-link button {
   border-radius: 10%;
   background-color: #27394e;
   color: white;
@@ -776,7 +782,8 @@ nav {
   padding: 0.5rem 0.5rem;
 }
 
-.project .medmemo-paragraph p {
+.project .medmemo-paragraph p,
+.project .testing-paragraph p {
   color: #27394e;
 }
 
@@ -815,43 +822,6 @@ nav {
     font-size: 2.8rem;
   }
   .project .medmemo-paragraph p {
-    font-size: 1.6rem;
-  }
-}
-
-/* Introduction */
-.learning-outcomes {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  min-height: 100%;
-  overflow-x: auto;
-}
-
-.learning-outcomes .learning-outcomes-text h2 {
-  font-size: 36px;
-}
-
-.learning-outcomes .learning-outcomes-text h4 {
-  color: #27394e;
-  margin: 2.5rem 0rem;
-  font-weight: normal;
-}
-
-@media screen and (max-width: 1308px) {
-  .learning-outcomes .learning-outcomes-text h2 {
-    font-size: 3rem;
-  }
-  .learning-outcomes .learning-outcomes-text h4 {
-    font-size: 1.8rem;
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  .learning-outcomes .learning-outcomes-text h2 {
-    font-size: 2.8rem;
-  }
-  .learning-outcomes .learning-outcomes-text h4 {
     font-size: 1.6rem;
   }
 }

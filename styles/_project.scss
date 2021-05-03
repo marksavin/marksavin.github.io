@@ -5,18 +5,20 @@
   align-items: center;
   min-height: 100%;
   overflow-x: auto;
+  flex-wrap: wrap;
 
   .medmemo {
     display: flex;
     justify-content: space-around;
     .img-medmemo {
-      width: 250px;
-      height: 250px;
+      width: 200px;
+      height: 200px;
       // border-radius: 40%;
     }
   }
 
-  .medmemo-paragraph {
+  .medmemo-paragraph,
+  .testing-paragraph {
     margin-left: 10rem;
     .medmemo-link {
       display: flex;
