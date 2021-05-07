@@ -105,6 +105,7 @@ main {
   width: 60px;
   height: 34px;
   margin-top: 25px;
+  z-index: 100;
 }
 
 /* Hide default HTML checkbox */
@@ -235,6 +236,23 @@ input:checked + .slider:before {
   }
 }
 
+@media screen and (max-width: 660px) {
+  .toggle {
+    position: absolute;
+    top: -2%;
+    left: -9%;
+    margin-top: 0rem;
+  }
+  /* The switch - the box around the slider */
+  .switch {
+    left: 100%;
+    width: 60px;
+    height: 34px;
+    margin-top: 25px;
+    z-index: 100;
+  }
+}
+
 .card {
   background: white;
   height: 85vh;
@@ -277,6 +295,23 @@ input:checked + .slider:before {
   /* creates padding around scroll thumb */
 }
 
+@media screen and (max-width: 660px) {
+  .card {
+    height: 100vh;
+    /* Set up proportionate scaling */
+    width: 100%;
+    overflow: hidden;
+    /* Set up positioning */
+  }
+  .content {
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    overflow: auto;
+    scroll-behavior: smooth;
+  }
+}
+
 /* Nav Section */
 nav {
   min-height: 15vh;
@@ -295,7 +330,7 @@ nav {
 }
 
 #logo {
-  font-size: 4.6rem;
+  font-size: 5rem;
   font-family: "Great Vibes", cursive;
   font-weight: 100;
   -webkit-box-flex: 1;
@@ -316,12 +351,25 @@ nav {
   font-weight: bold;
 }
 
+.nav-links a {
+  font-size: 2.8rem;
+}
+
 .menu-check {
   opacity: 0;
 }
 
 /* Media Queries */
-@media screen and (max-width: 1700px) {
+@media screen and (max-width: 1920px) {
+  #logo {
+    font-size: 4.6rem;
+  }
+  .nav-links a {
+    font-size: 2.3rem;
+  }
+}
+
+@media screen and (max-width: 1580px) {
   .nav-links {
     -webkit-box-flex: 1;
         -ms-flex: 1 1 70rem;
@@ -329,42 +377,12 @@ nav {
   }
 }
 
-@media screen and (max-width: 1500px) {
-  #logo {
-    font-size: 4rem;
-  }
-  .nav-links {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 100rem;
-            flex: 1 1 100rem;
-  }
-  .nav-links a {
-    font-size: 1.7rem;
-  }
-}
-
 @media screen and (max-width: 1450px) {
-  .nav-links {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 100rem;
-            flex: 1 1 100rem;
-  }
-  .nav-links a {
-    font-size: 1.7rem;
-  }
-}
-
-@media screen and (max-width: 1150px) {
   #logo {
-    font-size: 3.5rem;
-  }
-  .nav-links {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 100rem;
-            flex: 1 1 100rem;
+    font-size: 3.8rem;
   }
   .nav-links a {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
 }
 
@@ -561,6 +579,13 @@ nav {
 @media screen and (max-width: 1024px) {
   .home .intro-about-me .img-me {
     display: none;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .content {
+    height: 100%;
+    width: 100%;
   }
 }
 
@@ -903,16 +928,6 @@ nav {
             align-items: normal;
     background: none;
   }
-  .contact .list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
   .contact .contact-me {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -924,6 +939,28 @@ nav {
   }
   .contact .contact-me p {
     display: none;
+  }
+  .contact .list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contact .list .email-mini,
+  .contact .list .github-mini,
+  .contact .list .linkedin-mini {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .contact {
+    max-height: 100%;
   }
 }
 
