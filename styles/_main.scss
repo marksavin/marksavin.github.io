@@ -142,18 +142,19 @@ input:checked + .slider:before {
 
 @media screen and (max-width: 660px) {
   .toggle {
-    position: absolute;
-    top: -2%;
-    left: -9%;
-    margin-top: 0rem;
+    display: none;
+    // position: absolute;
+    // top: -2%;
+    // left: -9%;
+    // margin-top: 0rem;
   }
 
   /* The switch - the box around the slider */
-  .switch {
-    left: 100%;
-    width: 60px;
-    height: 34px;
-    margin-top: 25px;
-    z-index: 100;
-  }
+  // .switch {
+  //   left: 100%;
+  //   width: 60px;
+  //   height: 34px;
+  //   margin-top: 25px;
+  //   z-index: 100;
+  // }
 }
