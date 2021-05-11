@@ -238,19 +238,9 @@ input:checked + .slider:before {
 
 @media screen and (max-width: 660px) {
   .toggle {
-    position: absolute;
-    top: -2%;
-    left: -9%;
-    margin-top: 0rem;
+    display: none;
   }
   /* The switch - the box around the slider */
-  .switch {
-    left: 100%;
-    width: 60px;
-    height: 34px;
-    margin-top: 25px;
-    z-index: 100;
-  }
 }
 
 .card {
@@ -306,7 +296,6 @@ input:checked + .slider:before {
   .content {
     height: 100%;
     width: 100%;
-    margin: auto;
     overflow: auto;
     scroll-behavior: smooth;
   }
@@ -395,6 +384,9 @@ nav {
     background: #525252;
     margin: 0.5rem 0rem;
     display: block;
+  }
+  #logo {
+    font-size: 2.8rem;
   }
   .nav-links a {
     color: white;
@@ -576,16 +568,73 @@ nav {
   }
 }
 
-@media screen and (max-width: 1024px) {
-  .home .intro-about-me .img-me {
-    display: none;
-  }
-}
-
 @media screen and (max-width: 660px) {
   .content {
     height: 100%;
     width: 100%;
+  }
+  .home {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    min-height: 60%;
+  }
+  .home .intro-about-me {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 20rem;
+            flex: 1 1 20rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .home .intro-about-me .img-me {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+  }
+  .home .home-text {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 20rem;
+            flex: 1 1 20rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background: rgba(19, 28, 39, 0.8);
+    width: 90%;
+    margin: auto;
+    min-height: 30vh;
+    border-radius: 20px;
+  }
+  .home .home-text h2 {
+    font-size: 2.6rem;
+    color: white;
+  }
+  .home .home-text h1 {
+    font-size: 3rem;
+    color: white;
+  }
+  .home .home-text h4 {
+    font-size: 1.3rem;
+    color: white;
   }
 }
 
@@ -731,24 +780,27 @@ nav {
 }
 
 @media screen and (max-width: 1024px) {
+  .about {
+    min-height: 50%;
+  }
   .about .about-text h2 {
-    font-size: 2.8rem;
+    font-size: 2.6rem;
   }
   .about .about-text p {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
   }
   .about .about-skills h2 {
-    font-size: 2.8rem;
+    font-size: 2.6rem;
   }
   .about .about-skills .programming h4,
   .about .about-skills .software h4,
   .about .about-skills .operating-systems h4 {
-    font-size: 2rem;
+    font-size: 1.3rem;
   }
   .about .about-skills .programming p,
   .about .about-skills .software p,
   .about .about-skills .operating-systems p {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
   }
 }
 
@@ -843,11 +895,31 @@ nav {
 }
 
 @media screen and (max-width: 1024px) {
+  .project {
+    min-height: 50%;
+  }
+  .project .medmemo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 90%;
+    margin: auto;
+  }
   .project .medmemo-paragraph h2 {
-    font-size: 2.8rem;
+    font-size: 2.6rem;
   }
   .project .medmemo-paragraph p {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
   }
 }
 
@@ -915,52 +987,24 @@ nav {
   }
 }
 
-@media screen and (max-width: 1024px) {
-  .contact {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -webkit-box-align: normal;
-        -ms-flex-align: normal;
-            align-items: normal;
-    background: none;
-  }
-  .contact .contact-me {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin-bottom: 10px;
-  }
-  .contact .contact-me p {
-    display: none;
-  }
-  .contact .list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .contact .list .email-mini,
-  .contact .list .github-mini,
-  .contact .list .linkedin-mini {
-    width: 50px;
-    height: 50px;
-  }
-}
-
 @media screen and (max-width: 660px) {
   .contact {
-    max-height: 100%;
+    min-height: 60%;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .contact .contact-me h2 {
+    font-size: 3rem;
+  }
+  .contact .contact-me h4 {
+    color: #27394e;
+    font-size: 2rem;
+  }
+  .contact .contact-me p {
+    margin-top: 10%;
+    color: #27394e;
+    font-size: 1.4rem;
   }
 }
 
@@ -1106,7 +1150,7 @@ footer .footer-content h4 {
 }
 
 @media screen and (max-width: 1024px) {
-  footer {
+  .footer-content h4 {
     display: none;
   }
 }

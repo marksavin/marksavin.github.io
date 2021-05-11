@@ -105,24 +105,26 @@
 
 @media screen and (max-width: 1024px) {
   .about {
+    min-height: 50%;
+
     .about-text h2 {
-      font-size: 2.8rem;
+      font-size: 2.6rem;
     }
     .about-text p {
-      font-size: 1.6rem;
+      font-size: 1.3rem;
     }
     .about-skills {
       h2 {
-        font-size: 2.8rem;
+        font-size: 2.6rem;
       }
       .programming,
       .software,
       .operating-systems {
         h4 {
-          font-size: 2rem;
+          font-size: 1.3rem;
         }
         p {
-          font-size: 1.6rem;
+          font-size: 1.3rem;
         }
       }
     }
