@@ -129,6 +129,13 @@
 }
 
 @media screen and (max-width: 1024px) {
+  .home {
+    .intro-about-me {
+      .img-me {
+        display: none;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 660px) {
