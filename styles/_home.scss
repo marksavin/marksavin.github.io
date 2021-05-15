@@ -132,53 +132,24 @@
 }
 
 @media screen and (max-width: 660px) {
-  .content {
-    height: 100%;
-    width: 100%;
-    // overflow: hidden;
-  }
   .home {
-    display: flex;
     justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    min-height: 60%;
-
     .intro-about-me {
-      flex: 1 1 20rem;
-      margin-top: 20px;
-      margin-bottom: 20px;
-
       .img-me {
-        width: 200px;
-        height: 200px;
-        border-radius: 50%;
+        display: none;
       }
     }
 
     .home-text {
-      flex: 1 1 20rem;
-
-      display: flex;
-      justify-content: center;
       align-items: center;
-      flex-direction: column;
-      background: rgba(19, 28, 39, 0.8);
-      width: 90%;
-      margin: auto;
-      min-height: 30vh;
-      border-radius: 20px;
       h2 {
         font-size: 2.6rem;
-        color: white;
       }
       h1 {
         font-size: 3rem;
-        color: white;
       }
       h4 {
         font-size: 1.3rem;
-        color: white;
       }
     }
   }
