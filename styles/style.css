@@ -1118,7 +1118,7 @@ footer .footer-content h4 {
   }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 662px) {
   footer {
     display: none;
   }
