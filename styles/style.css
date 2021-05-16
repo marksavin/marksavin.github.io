@@ -939,6 +939,10 @@ nav {
 }
 
 @media screen and (max-width: 660px) {
+  .contact {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
   .contact .contact-me h2 {
     font-size: 3rem;
   }
@@ -950,6 +954,26 @@ nav {
     margin-top: 10%;
     color: #27394e;
     font-size: 1.4rem;
+  }
+  .contact .list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 40rem;
+            flex: 1 1 40rem;
+  }
+  .contact .list .email-mini,
+  .contact .list .github-mini,
+  .contact .list .linkedin-mini {
+    width: 4rem;
+    height: 4rem;
   }
 }
 
@@ -1095,7 +1119,7 @@ footer .footer-content h4 {
 }
 
 @media screen and (max-width: 1024px) {
-  .footer-content h4 {
+  footer {
     display: none;
   }
 }
