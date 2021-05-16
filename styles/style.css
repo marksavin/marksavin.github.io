@@ -311,6 +311,8 @@ nav {
           align-items: center;
   width: 80%;
   margin: auto;
+  position: absolute;
+  top: 0;
 }
 
 #logo {

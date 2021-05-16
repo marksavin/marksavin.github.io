@@ -2,12 +2,12 @@
 nav {
   min-height: 15vh;
   display: flex;
-  // position: absolute;
-  // top: 0;
   justify-content: center;
   align-items: center;
   width: 80%;
   margin: auto;
+  position: absolute;
+  top: 0;
   // scroll-behavior: auto;
 }
 #logo {
