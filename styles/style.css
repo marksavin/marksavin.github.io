@@ -253,7 +253,7 @@ input:checked + .slider:before {
           box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.3);
 }
 
-.content {
+.card .content {
   height: 55vh;
   width: 80%;
   margin: auto;
@@ -287,11 +287,11 @@ input:checked + .slider:before {
 
 @media screen and (max-width: 660px) {
   .card {
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     overflow: hidden;
   }
-  .content {
+  .card .content {
     height: 70vh;
     width: 100%;
   }
