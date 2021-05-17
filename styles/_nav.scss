@@ -1,4 +1,5 @@
 /* Nav Section */
+
 nav {
   min-height: 15vh;
   display: flex;
@@ -62,14 +63,16 @@ nav {
     background: #525252;
     margin: 0.5rem 0rem;
     display: block;
+    transition: all 0.5s ease;
   }
   #logo {
     font-size: 2.8rem;
   }
   .nav-links a {
     color: white;
-    font-size: 3rem;
+    font-size: 2.5rem;
     text-decoration: underline;
+    // display: none;
   }
 
   .nav-links {
@@ -94,13 +97,30 @@ nav {
     opacity: 0;
     z-index: 100;
   }
+
   .menu-check:checked + .nav-links {
     transform: translate(-112.5%);
   }
-  .menu-check:checked + footer {
-    display: none;
-  }
   .menu-check:checked ~ .burger span {
     background: white;
+  }
+  .menu-check:checked ~ .burger span:nth-child(1) {
+    transform: rotateZ(45deg) translateY(300%);
+  }
+  .menu-check:checked ~ .burger span:nth-child(2) {
+    opacity: 0;
+  }
+  .menu-check:checked ~ .burger span:nth-child(3) {
+    transform: rotateZ(-45deg) translateY(-300%);
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .nav-links {
+    width: 100%;
+    height: 100%;
+  }
+  .menu-check:checked + .nav-links {
+    transform: translateX(-100%) translateY(-7.5%);
   }
 }

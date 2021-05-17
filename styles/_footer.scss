@@ -103,6 +103,13 @@ footer {
   }
 }
 
+@media screen and (max-width: 1024px) {
+  //660px
+  footer {
+    display: none;
+  }
+}
+
 @media screen and (max-height: 630px) {
   .email-footer,
   .linkedin-footer {
@@ -134,14 +141,5 @@ footer {
     margin-top: 0.6rem;
     width: 2.5rem;
     height: 2.5rem;
-  }
-}
-
-@media screen and (max-width: 662px) {
-  // .footer-content h4 {
-  //   display: none;
-  // }
-  footer {
-    display: none;
   }
 }
