@@ -1,7 +1,7 @@
 /* Nav Section */
 
 nav {
-  min-height: 15vh;
+  min-height: 12vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -107,9 +107,13 @@ nav {
 }
 
 @media screen and (max-width: 660px) {
-  nav {
+  .main-head {
     position: fixed;
     top: 0;
+    width: 100%;
+    margin: auto;
+    // z-index: 200;
+    background: white;
   }
   .nav-links {
     width: 100%;

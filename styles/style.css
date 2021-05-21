@@ -301,7 +301,7 @@ input:checked + .slider:before {
 
 /* Nav Section */
 nav {
-  min-height: 15vh;
+  min-height: 12vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -433,9 +433,12 @@ nav {
 }
 
 @media screen and (max-width: 660px) {
-  nav {
+  .main-head {
     position: fixed;
     top: 0;
+    width: 100%;
+    margin: auto;
+    background: white;
   }
   .nav-links {
     width: 100%;
