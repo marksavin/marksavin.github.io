@@ -4,6 +4,7 @@
   min-height: 100%;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
 
   .about-text {
     flex: 4 1 40rem;
@@ -100,6 +101,12 @@
         }
       }
     }
+  }
+}
+
+@media screen and (max-height: 1000px) {
+  .about {
+    padding-top: 7rem;
   }
 }
 
