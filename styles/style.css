@@ -25,6 +25,14 @@ p {
   font-family: "Poppins", sans-serif;
 }
 
+/* Utility: very small inline text */
+.tiny {
+  font-size: 1rem; /* small relative to base 2rem */
+  vertical-align: baseline;
+  display: inline-block;
+  line-height: 1;
+}
+
 h2 {
   font-size: 3.5rem;
   font-family: "Poppins", sans-serif;
@@ -315,9 +323,9 @@ nav {
 }
 
 #logo {
-  font-size: 5rem;
-  font-family: "Great Vibes", cursive;
-  font-weight: 100;
+  font-size: 2.8rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
   -webkit-box-flex: 1;
       -ms-flex: 1 1 40rem;
           flex: 1 1 40rem;
@@ -346,8 +354,12 @@ nav {
 
 /* Media Queries */
 @media screen and (max-width: 1920px) {
+  /* keep logo and nav link sizes consistent */
   #logo {
-    font-size: 4.6rem;
+    font-size: 2.3rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    color: #27394e;
   }
   .nav-links a {
     font-size: 2.3rem;
@@ -364,7 +376,10 @@ nav {
 
 @media screen and (max-width: 1450px) {
   #logo {
-    font-size: 3.8rem;
+    font-size: 1.8rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    color: #27394e;
   }
   .nav-links a {
     font-size: 1.8rem;
@@ -390,7 +405,10 @@ nav {
     transition: all 0.5s ease;
   }
   #logo {
-    font-size: 2.8rem;
+    font-size: 2.5rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    color: white;
   }
   .nav-links a {
     color: white;
